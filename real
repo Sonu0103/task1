@@ -1,0 +1,80 @@
+from tkinter import*
+from tkinter import ttk
+from tkinter import messagebox
+
+class Cust_Win:
+    def __init__(self,root):
+        self.root=root
+        self.root.title("Realestate")
+        self.root.geometry("1550x800+0+0")
+
+        lbl_title=Label(self.root,text="RealEstate",font=("times new roman",40,"bold"),bg="black",fg="gold",bd=4,relief=RIDGE)
+        lbl_title.place(x=100,y=10,width=1000,height=50)
+
+        frame=Frame(self.root,bg="white")
+        frame.place(x=180,y=70,width=900,height=500)
+
+        register_lbl=Label(frame,text="Find Your Perfect Home",font=("timews new roman",20,"bold"),fg="darkgreen", bg="white")
+        register_lbl.place(x=250,y=20)
+
+        
+        cust_btn=Button(frame,text="For Sale",width=30,font=("times new roman",13,"bold"),bg="orange",fg="black",bd=0,cursor="hand1")
+        cust_btn.grid(row=0,column=0,pady=1)
+        cust_btn.place(x=45,y=100,width=300)
+
+        cust_btn=Button(frame,text="For Rent",width=30,font=("times new roman",13,"bold"),bg="orange",fg="black",bd=0,cursor="hand1")
+        cust_btn.grid(row=0,column=0,pady=1)
+        cust_btn.place(x=500,y=100,width=300)
+
+        cust_btn=Button(frame,text="neighborhood",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=45,y=150,width=300)
+
+        cust_btn=Button(frame,text="city",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=500,y=150,width=300)
+
+        cust_btn=Button(frame,text="minimum price",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=45,y=200,width=300)
+
+        cust_btn=Button(frame,text="maximum price",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=500,y=200,width=300)
+
+        cust_btn=Button(frame,text="property status",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=45,y=250,width=300)
+
+        cust_btn=Button(frame,text="property type",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=500,y=250,width=300)
+
+        cust_btn=Button(frame,text="BHK",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=45,y=300,width=300)
+
+        cust_btn=Button(frame,text="aminities",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=500,y=300,width=300)
+
+        cust_btn=Button(frame,text="bedrooms",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=45,y=350,width=300)
+
+        cust_btn=Button(frame,text="bathrooms",width=30,font=("times new roman",13,"bold"),bg="grey",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=500,y=350,width=300)
+
+        cust_btn=Button(frame,text="Search Property",width=30,font=("times new roman",13,"bold"),bg="orange",fg="white",bd=0,cursor="hand1")
+        cust_btn.grid(row=1,column=0,pady=1)
+        cust_btn.place(x=200,y=450,width=500)
+
+
+        
+
+
+if __name__ == "__main__":
+    root=Tk()
+    obj=Cust_Win(root)
+    root.mainloop()
